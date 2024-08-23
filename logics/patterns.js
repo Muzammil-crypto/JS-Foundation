@@ -112,5 +112,18 @@ function pyramidStarPattern(n) {
   }
 }
 
+// pyramidStarPattern(5);
 
-pyramidStarPattern(5);
+function hollowPyramidPattern(n) {
+  for (i = 1; i <= n; i++) {
+    const spaces = " ".repeat(n - i);
+    const stars =
+      i != 1 && i != n
+        ? "*" + " ".repeat(2 * i - 3) + "*"
+        : "*".repeat(2 * i - 1);
+
+    console.log(spaces + stars);
+  }
+}
+
+hollowPyramidPattern(10);
