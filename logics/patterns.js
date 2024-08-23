@@ -126,4 +126,15 @@ function hollowPyramidPattern(n) {
   }
 }
 
-hollowPyramidPattern(10);
+// hollowPyramidPattern(10);
+
+function invertedPyramidStarPattern(n) {
+  for (i = n; i >= 1; i--) {
+    const spaces = " ".repeat(n - i);
+    const stars = "*".repeat(2 * i - 1);
+
+    console.log(spaces + stars);
+  }
+}
+
+invertedPyramidStarPattern(30);
