@@ -76,13 +76,41 @@ function rhombusStar(n) {
   }
 }
 
-
-function mirroredRhombusStar(n){
-    for (i = 1; i <= n; i++) {
-        console.log(i == 1 ? "" : " ".repeat(n-i) + "********".repeat(1));
-      }
+function mirroredRhombusStar(n) {
+  for (i = 1; i <= n; i++) {
+    console.log(i == 1 ? "" : " ".repeat(n - i) + "********".repeat(1));
+  }
 }
 
 // RhombusStar(5);
 
-mirroredRhombusStar(10);
+// mirroredRhombusStar(10);
+
+function leftTriangle(n) {
+  for (i = 1; i <= n; i++) {
+    console.log("*".repeat(i));
+  }
+}
+
+// leftTriangle(10);
+
+function rightTriangle(n) {
+  for (i = 1; i <= n; i++) {
+    const spaces = " ".repeat(n - i);
+    console.log(spaces + "*".repeat(i));
+  }
+}
+
+// rightTriangle(10);
+
+function pyramidStarPattern(n) {
+  for (i = 1; i <= n; i++) {
+    const spaces = " ".repeat(n - i);
+    const stars = "*".repeat(2 * i - 1);
+
+    console.log(spaces + stars);
+  }
+}
+
+
+pyramidStarPattern(5);
