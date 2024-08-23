@@ -68,4 +68,21 @@ function printDiamond(n) {
   }
 }
 
-printDiamond(5);
+// printDiamond(5);
+
+function rhombusStar(n) {
+  for (i = 1; i <= n; i++) {
+    console.log(i == 1 ? "" : " ".repeat(i) + "*".repeat(i));
+  }
+}
+
+
+function mirroredRhombusStar(n){
+    for (i = 1; i <= n; i++) {
+        console.log(i == 1 ? "" : " ".repeat(n-i) + "********".repeat(1));
+      }
+}
+
+// RhombusStar(5);
+
+mirroredRhombusStar(10);
