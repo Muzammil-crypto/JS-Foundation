@@ -137,4 +137,20 @@ function invertedPyramidStarPattern(n) {
   }
 }
 
-invertedPyramidStarPattern(30);
+// invertedPyramidStarPattern(30);
+
+
+
+function invertedHollowPyramidPattern(n) {
+    for (i = n; i >=1; i--) {
+      const spaces = " ".repeat(n - i);
+      const stars =
+        i != 1 && i != n
+          ? "*" + " ".repeat(2 * i - 3) + "*"
+          : "*".repeat(2 * i - 1);
+  
+      console.log(spaces + stars);
+    }
+  }
+
+  invertedHollowPyramidPattern(10);
